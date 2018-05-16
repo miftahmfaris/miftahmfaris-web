@@ -1,5 +1,14 @@
 import React, { Component } from "react";
-import { Jumbotron } from "reactstrap";
+import {
+  Jumbotron,
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  Row,
+  Col
+} from "reactstrap";
 
 class Home extends Component {
   render() {
@@ -69,31 +78,14 @@ class Home extends Component {
               </h1>
             </div>
             <div className="width-full">
-              <div className="border-content">
-                <span className="text-content-small">Helpdesk </span>
-                <span className="text-content-year">(2015 - 2017)</span>
-                <p className="text-content">Otoritas Jasa Keuangan</p>
-              </div>
-            </div>
-          </div>
-        </Jumbotron>
-
-        <Jumbotron className="page-edu">
-          <div className="content-bio">
-            <div>
-              <div>
-                <h1 className="text-sub-title">
-                  <strong>Education</strong>
-                </h1>
-              </div>
-              <div>
-                <span className="text-content">2015</span>
-                <p className="text-content">
-                  Bachelor Degree in Informatic Engineering
-                </p>
-                <span className="text-content">
-                  Indonesian Computer University
-                </span>
+              <div className="flex-space-around">
+                <h3 className="text-content">
+                  Helpdesk
+                  <p className="text-content-small">
+                    Otoritas Jasa Keuangan
+                  </p>{" "}
+                </h3>
+                <span className="text-content-xsmall">Okt 2015 - Des 2017</span>
               </div>
             </div>
           </div>
@@ -108,53 +100,85 @@ class Home extends Component {
                 </h1>
               </div>
               <div className="flex-center-skill">
-                <span className="text-title-logo-skill">
-                  <img
-                    src={require(`../images/html.png`)}
-                    alt="html5"
-                    className="img-logo-skill"
-                  />html5
-                </span>
-                <span className="text-title-logo-skill">
-                  <img
-                    src={require(`../images/css.png`)}
-                    alt="css3"
-                    className="img-logo-skill"
-                  />
-                  css3
-                </span>
-                <span className="text-title-logo-skill">
-                  <img
-                    src={require(`../images/js.png`)}
-                    alt="js"
-                    className="img-logo-skill"
-                  />
-                  javaScript
-                </span>
-                <span className="text-title-logo-skill">
-                  <img
-                    src={require(`../images/react.png`)}
-                    alt="react"
-                    className="img-logo-skill"
-                  />
-                  react JS
-                </span>
-                <span className="text-title-logo-skill">
-                  <img
-                    src={require(`../images/node.png`)}
-                    alt="node"
-                    className="img-logo-skill"
-                  />
-                  node JS
-                </span>
-                <span className="text-title-logo-skill">
-                  <img
-                    src={require(`../images/mongod.png`)}
-                    alt="mongo"
-                    className="img-logo-skill"
-                  />
-                  mongodb
-                </span>
+                <Row>
+                  <Col
+                    xl="2"
+                    sm="3"
+                    xs="4"
+                    className="text-title-logo-skill text-content-xsmall"
+                  >
+                    <img
+                      src={require(`../images/html.png`)}
+                      alt="html5"
+                      className="img-logo-skill"
+                    />html5
+                  </Col>
+                  <Col
+                    xl="2"
+                    sm="3"
+                    xs="4"
+                    className="text-title-logo-skill text-content-xsmall"
+                  >
+                    <img
+                      src={require(`../images/css.png`)}
+                      alt="css3"
+                      className="img-logo-skill"
+                    />
+                    css3
+                  </Col>
+                  <Col
+                    xl="2"
+                    sm="3"
+                    xs="4"
+                    className="text-title-logo-skill text-content-xsmall"
+                  >
+                    <img
+                      src={require(`../images/js.png`)}
+                      alt="js"
+                      className="img-logo-skill"
+                    />
+                    javaScript
+                  </Col>
+                  <Col
+                    xl="2"
+                    sm="3"
+                    xs="4"
+                    className="text-title-logo-skill text-content-xsmall"
+                  >
+                    <img
+                      src={require(`../images/react.png`)}
+                      alt="react"
+                      className="img-logo-skill"
+                    />
+                    react JS
+                  </Col>
+                  <Col
+                    xl="2"
+                    sm="3"
+                    xs="4"
+                    className="text-title-logo-skill text-content-xsmall"
+                  >
+                    <img
+                      src={require(`../images/node.png`)}
+                      alt="node"
+                      className="img-logo-skill"
+                    />
+                    node JS
+                  </Col>
+                  <Col
+                    xl="2"
+                    sm="3"
+                    xs="4"
+                    className="text-title-logo-skill text-content-xsmall"
+                  >
+                    <img
+                      src={require(`../images/mongod.png`)}
+                      alt="mongo"
+                      className="img-logo-skill"
+                    />
+                    mongodb
+                  </Col>
+                </Row>
               </div>
             </div>
           </div>
@@ -165,18 +189,29 @@ class Home extends Component {
             <div>
               <div>
                 <h1 className="text-sub-title">
-                  <strong>My Works</strong>
+                  <strong>Latest Works</strong>
                 </h1>
               </div>
-              <div>
-                <span className="text-content">2015</span>
-                <p className="text-content">
-                  Bachelor Degree in Informatic Engineering
-                </p>
-                <span className="text-content">
-                  Indonesian Computer University
-                </span>
-              </div>
+
+              <Row className="flex-space-around">
+                <Col xs="12" xl="4">
+                  <Card className="card-project">
+                    <a href="http://foodbook.xyz/">
+                      <CardImg
+                        width="10%"
+                        src={require(`../images/foodbook.png`)}
+                        alt="Card image cap"
+                      />
+                    </a>
+                    <CardBody>
+                      <CardTitle className="text-content">Foodbook</CardTitle>
+                      <CardText className="text-content-small">
+                        This app useful for sharing favorite food to everyone.
+                      </CardText>
+                    </CardBody>
+                  </Card>
+                </Col>
+              </Row>
             </div>
           </div>
         </Jumbotron>

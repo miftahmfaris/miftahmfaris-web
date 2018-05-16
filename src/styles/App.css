@@ -11,6 +11,12 @@ body {
   justify-content: center;
 }
 
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .flex-center-center {
   display: flex;
   justify-content: center;
@@ -33,23 +39,31 @@ body {
 
 .text-content {
   font-size: 30px;
-  font-family: "Flamenco", cursive;
+  font-family: "Nixie One", cursive;
+  color: #000;
 }
 
 .text-content-small {
   font-size: 25px;
-  font-family: "Flamenco", cursive;
+  font-family: "Nixie One", cursive;
+  color: #000;
 }
 
-.text-content-year {
+.text-content-xsmall {
   font-size: 18px;
-  font-family: "Flamenco", cursive;
-  color: #a2a2a2;
+  font-family: "Nixie One", cursive;
 }
 
+h3.text-content-small {
+  margin-bottom: 0px;
+}
+
+p.text-content {
+  margin-bottom: 0px;
+}
 .text-sub-title {
   font-size: 40px;
-  font-family: "Flamenco", cursive;
+  font-family: "Boogaloo", cursive;
 }
 
 .img-logo {
@@ -97,6 +111,8 @@ body {
   margin-bottom: 0px !important;
   padding-bottom: 30px !important;
   border-radius: 0px !important;
+  min-height: 100vh;
+  
 }
 
 .page-bio {
@@ -104,6 +120,8 @@ body {
   padding-top: 30px !important;
   padding-bottom: 30px !important;
   border-radius: 0px !important;
+  margin-bottom: 0px !important;
+  min-height: 100vh;
 }
 
 .page-experience {
@@ -111,13 +129,8 @@ body {
   padding-top: 30px !important;
   padding-bottom: 30px !important;
   border-radius: 0px !important;
-}
-
-.page-edu {
-  background: #e6332e !important;
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
-  border-radius: 0px !important;
+  margin-bottom: 0px !important;
+  min-height: 100vh;
 }
 
 .page-skill {
@@ -125,6 +138,8 @@ body {
   padding-top: 30px !important;
   padding-bottom: 30px !important;
   border-radius: 0px !important;
+  margin-bottom: 0px !important;
+  min-height: 100vh;
 }
 
 .page-portofolio {
@@ -132,4 +147,15 @@ body {
   padding-top: 30px !important;
   padding-bottom: 30px !important;
   border-radius: 0px !important;
+  margin-bottom: 0px !important;
+  min-height: 100vh;
+}
+
+.card-project {
+  margin-bottom: 10px;
+}
+
+.card-project:hover {
+  background: #fcfcfc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
