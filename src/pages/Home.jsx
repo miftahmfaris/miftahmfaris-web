@@ -9,15 +9,48 @@ import {
   Row,
   Col
 } from "reactstrap";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 
 class Home extends Component {
+  constructor() {
+    super();
+  }
+
+  componentDidMount() {
+    Events.scrollEvent.register("begin", function(to, element) {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register("end", function(to, element) {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
+  }
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove("begin");
+    Events.scrollEvent.remove("end");
+  }
+
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+
   render() {
     return (
       <div>
         <div className="flex-center">
           <h1 className="text-title flex-center-center">mf</h1>
         </div>
-        <Jumbotron className="page-overview">
+        <Jumbotron className="page-overview flex-full-center">
           <div className="content-overview">
             <div>
               <p className="text-content">Hi Everyone,</p>
@@ -51,7 +84,7 @@ class Home extends Component {
           </div>
         </Jumbotron>
 
-        <Jumbotron className="page-bio">
+        <Jumbotron className="page-bio flex-full-center">
           <div className="content-bio">
             <div>
               <div>
@@ -70,7 +103,7 @@ class Home extends Component {
           </div>
         </Jumbotron>
 
-        <Jumbotron className="page-experience">
+        <Jumbotron className="page-experience flex-full-center">
           <div className="content-bio">
             <div>
               <h1 className="text-sub-title">
@@ -91,7 +124,7 @@ class Home extends Component {
           </div>
         </Jumbotron>
 
-        <Jumbotron className="page-skill">
+        <Jumbotron className="page-skill flex-full-center">
           <div className="content-bio">
             <div>
               <div>
@@ -184,7 +217,7 @@ class Home extends Component {
           </div>
         </Jumbotron>
 
-        <Jumbotron className="page-portofolio">
+        <Jumbotron className="page-portofolio flex-full-center">
           <div className="content-bio">
             <div>
               <div>
@@ -214,6 +247,9 @@ class Home extends Component {
               </Row>
             </div>
           </div>
+          <a onClick={this.scrollToTop}>
+            <img className="img-top" src={require(`../images/top.png`)} alt="TOP" />
+          </a>
         </Jumbotron>
       </div>
     );
