@@ -47,16 +47,16 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div className="flex-center">
-          <h1 className="text-title flex-center-center">mf</h1>
-        </div>
         <Jumbotron className="page-overview flex-full-center">
           <div className="content-overview">
             <div>
               <p className="text-content">Hi Everyone,</p>
-              <p className="text-content">
-                I'm <strong>Miftah Faris</strong>, a Developer
+              <p className="text-content-small">
+                I'm <strong>Miftah Faris</strong>, a Developer based in
+                <strong> Jakarta</strong>
               </p>
+              <p className="text-content">Keep Scrolling</p>
+              <p className="text-content-small">to know more about me</p>
             </div>
             <div className="flex-center">
               <a href="https://www.facebook.com/miftahdefariis?ref=bookmarks">
@@ -91,12 +91,14 @@ class Home extends Component {
                 <h1 className="text-sub-title">
                   <strong>Bio</strong>
                 </h1>
-                <p className="text-content">This is a little story about me</p>
+                <p className="text-content-small">
+                  This is a little story about me
+                </p>
               </div>
               <p className="text-content">
-                I'm a bachelor degree of computer science from
-                <strong> Indonesian Computer University</strong>.
-                <span> I'd loved all about computer</span>.
+                {`I'd loved all about computer, and interested in about
+                technology. Let's talk and solved together.
+                I'm fans of cat too.`}
               </p>
             </div>
             <div />
@@ -110,17 +112,17 @@ class Home extends Component {
                 <strong>Experience</strong>
               </h1>
             </div>
-            <div className="width-full">
-              <div className="flex-space-around">
-                <h3 className="text-content">
+            <Row>
+              <Col>
+                <h3 className="text-content-small">
                   Helpdesk
-                  <p className="text-content-small">
-                    Otoritas Jasa Keuangan
-                  </p>{" "}
+                  <span className="text-content-xsmall">
+                    (Okt 2015 - Des 2017)
+                  </span>
+                  <p className="text-content">Otoritas Jasa Keuangan</p>{" "}
                 </h3>
-                <span className="text-content-xsmall">Okt 2015 - Des 2017</span>
-              </div>
-            </div>
+              </Col>
+            </Row>
           </div>
         </Jumbotron>
 
@@ -237,9 +239,12 @@ class Home extends Component {
                       />
                     </a>
                     <CardBody>
-                      <CardTitle className="text-content">Foodbook</CardTitle>
+                      <CardTitle className="text-content">
+                        <strong>Foodbook</strong>
+                      </CardTitle>
                       <CardText className="text-content-small">
-                        This app useful for sharing favorite food to everyone.
+                        This app useful for sharing your favorite food to
+                        everyone.
                       </CardText>
                     </CardBody>
                   </Card>
@@ -248,7 +253,11 @@ class Home extends Component {
             </div>
           </div>
           <a onClick={this.scrollToTop}>
-            <img className="img-top" src={require(`../images/top.png`)} alt="TOP" />
+            <img
+              className="img-top"
+              src={require(`../images/top.png`)}
+              alt="TOP"
+            />
           </a>
         </Jumbotron>
       </div>

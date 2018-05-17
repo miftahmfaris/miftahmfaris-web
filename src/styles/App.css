@@ -23,12 +23,6 @@ body {
   flex-wrap: wrap;
 }
 
-.flex-center-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .content-overview {
   padding: 80px 40px 40px 40px;
   width: 100%;
@@ -57,7 +51,7 @@ body {
 
 .text-content-xsmall {
   font-size: 18px;
-  font-family: "Nixie One", cursive;
+  font-family: "Boogaloo", cursive;
 }
 
 h3.text-content-small {
@@ -67,9 +61,10 @@ h3.text-content-small {
 p.text-content {
   margin-bottom: 0px;
 }
+
 .text-sub-title {
   font-size: 40px;
-  font-family: "Boogaloo", cursive;
+  font-family: "Lobster Two", cursive;
 }
 
 .img-logo {
@@ -166,4 +161,9 @@ p.text-content {
   position: fixed;
   bottom: 10px;
   right: 0px;
+}
+
+.img-top:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50px;
 }
