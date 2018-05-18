@@ -1,10 +1,11 @@
 import React from "react";
 import { Jumbotron } from "reactstrap";
+import {} from "animate.css";
 
 const Overview = () => {
   return (
-    <Jumbotron className="page-overview flex-full-center">
-      <div className="content-overview">
+    <Jumbotron className=" page-overview flex-full-center">
+      <div className="content-overview animated swing">
         <div>
           <p className="text-content">Hi Everyone,</p>
           <p className="text-content-small">
