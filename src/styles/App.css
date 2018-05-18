@@ -6,15 +6,26 @@ body {
   width: 100%;
 }
 
+.margin-top-10 {
+  margin-top: 10px;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
 }
 
-.flex-full-center {
+.flex-center-all {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.flex-center-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .flex-space-around {

@@ -3,7 +3,7 @@ import { Jumbotron, Row, Col } from "reactstrap";
 
 const Skill = () => {
   return (
-    <Jumbotron className="page-skill flex-full-center">
+    <Jumbotron className="page-skill">
       <div className="content-bio">
         <div>
           <div>
@@ -12,7 +12,7 @@ const Skill = () => {
             </h1>
           </div>
           <div className="flex-center-skill">
-            <Row>
+            <Row >
               <Col
                 xl="2"
                 sm="3"
@@ -89,6 +89,42 @@ const Skill = () => {
                   className="img-logo-skill"
                 />
                 mongodb
+              </Col>
+              <Col
+                xl="2"
+                sm="3"
+                xs="4"
+                className="text-title-logo-skill text-content-xsmall"
+              >
+                <img
+                  src={require(`../images/git.png`)}
+                  alt="html5"
+                  className="img-logo-skill"
+                />git
+              </Col>
+              <Col
+                xl="2"
+                sm="3"
+                xs="4"
+                className="text-title-logo-skill text-content-xsmall"
+              >
+                <img
+                  src={require(`../images/api.png`)}
+                  alt="html5"
+                  className="img-logo-skill"
+                />Rest API
+              </Col>
+              <Col
+                xl="2"
+                sm="3"
+                xs="4"
+                className="text-title-logo-skill text-content-xsmall"
+              >
+                <img
+                  src={require(`../images/sql.png`)}
+                  alt="html5"
+                  className="img-logo-skill"
+                />MySQL
               </Col>
             </Row>
           </div>
