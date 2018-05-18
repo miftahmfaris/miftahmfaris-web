@@ -11,8 +11,8 @@ const Skill = () => {
               <strong>Skillset</strong>
             </h1>
           </div>
-          <div className="flex-center-skill">
-            <Row >
+          <div className="flex-center">
+            <Row className="flex-center">
               <Col
                 xl="2"
                 sm="3"
@@ -23,7 +23,8 @@ const Skill = () => {
                   src={require(`../images/html.png`)}
                   alt="html5"
                   className="img-logo-skill"
-                />html5
+                />
+                <p>html5</p>
               </Col>
               <Col
                 xl="2"
@@ -36,7 +37,7 @@ const Skill = () => {
                   alt="css3"
                   className="img-logo-skill"
                 />
-                css3
+                <p>css3</p>
               </Col>
               <Col
                 xl="2"
@@ -49,7 +50,7 @@ const Skill = () => {
                   alt="js"
                   className="img-logo-skill"
                 />
-                javaScript
+                <p>javaScript</p>
               </Col>
               <Col
                 xl="2"
@@ -62,7 +63,7 @@ const Skill = () => {
                   alt="react"
                   className="img-logo-skill"
                 />
-                react JS
+                <p>react JS</p>
               </Col>
               <Col
                 xl="2"
@@ -75,7 +76,7 @@ const Skill = () => {
                   alt="node"
                   className="img-logo-skill"
                 />
-                node JS
+                <p>node JS</p>
               </Col>
               <Col
                 xl="2"
@@ -88,7 +89,7 @@ const Skill = () => {
                   alt="mongo"
                   className="img-logo-skill"
                 />
-                mongodb
+                <p>mongodb</p>
               </Col>
               <Col
                 xl="2"
@@ -100,7 +101,8 @@ const Skill = () => {
                   src={require(`../images/git.png`)}
                   alt="html5"
                   className="img-logo-skill"
-                />git
+                />
+                <p>git</p>
               </Col>
               <Col
                 xl="2"
@@ -112,7 +114,8 @@ const Skill = () => {
                   src={require(`../images/api.png`)}
                   alt="html5"
                   className="img-logo-skill"
-                />Rest API
+                />
+                <p>Rest API</p>
               </Col>
               <Col
                 xl="2"
@@ -124,7 +127,8 @@ const Skill = () => {
                   src={require(`../images/sql.png`)}
                   alt="html5"
                   className="img-logo-skill"
-                />MySQL
+                />
+                <p>MySQL</p>
               </Col>
             </Row>
           </div>

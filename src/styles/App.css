@@ -83,19 +83,9 @@ p.text-content {
   margin: 10px;
 }
 
-.flex-center-skill {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: reverse;
-}
-
 .img-logo-skill {
   width: 40px;
   margin: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
 }
 
 .text-title-logo-skill {
